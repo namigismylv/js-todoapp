@@ -1,7 +1,9 @@
 const toDoApp = document.getElementById("todoapp")
 const add = document.getElementById("add")
 const list = document.getElementById("list")
-add.addEventListener("click", (e) => {
+const form=document.getElementById("form")
+form.addEventListener("submit",()=>{
+    
     if (toDoApp.value.trim() == "") return
         let newLi = document.createElement("li")
         let newBtn = document.createElement("button")
@@ -36,5 +38,6 @@ add.addEventListener("click", (e) => {
 
             }
         })
+     
+})
         
-    })
